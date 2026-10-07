@@ -1,0 +1,7 @@
+{
+  "name": "CV-Ariana",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

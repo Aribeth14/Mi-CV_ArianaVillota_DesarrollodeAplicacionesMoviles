@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Habilidades</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  @for (h of habilidades; track h.categoria) {
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>
+          <ion-icon [name]="h.icono" [color]="h.color"></ion-icon>
+          {{ h.categoria }}
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        @for (item of h.items; track item) {
+          <ion-chip [color]="h.color"><ion-label>{{ item }}</ion-label></ion-chip>
+        }
+      </ion-card-content>
+    </ion-card>
+  }
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        <ion-icon name="language-outline" color="danger"></ion-icon>
+        Idiomas
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <strong>Inglés B1</strong> – CEC: 2025 (4 ciclos)
+      <ion-progress-bar value="0.5" color="danger"></ion-progress-bar>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

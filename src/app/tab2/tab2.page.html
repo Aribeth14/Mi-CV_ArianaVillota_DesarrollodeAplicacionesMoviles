@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Formación y experiencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-accordion-group [multiple]="true" [value]="['formacion', 'experiencia']">
+
+    <ion-accordion value="formacion">
+      <ion-item slot="header" color="light">
+        <ion-icon name="school-outline" slot="start"></ion-icon>
+        <ion-label>Formación profesional</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <h3>Tecnología Superior en Desarrollo de Software</h3>
+        <p>Escuela Politécnica Nacional</p>
+        <ion-chip color="primary"><ion-label>2023 – Actualidad</ion-label></ion-chip>
+      </div>
+    </ion-accordion>
+
+    <ion-accordion value="experiencia">
+      <ion-item slot="header" color="light">
+        <ion-icon name="briefcase-outline" slot="start"></ion-icon>
+        <ion-label>Experiencia de trabajo</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <h3>Escuela de Formación de Tecnólogos (ESFOT) - EPN</h3>
+        <p>Prácticas de Servicio Comunitario – Archivo General de la Facultad</p>
+        <ion-chip color="primary"><ion-label>03/2026 – 04/2026</ion-label></ion-chip>
+        <ion-list lines="none">
+          <ion-item>
+            <ion-icon name="checkmark-circle-outline" slot="start" color="success"></ion-icon>
+            <ion-label class="ion-text-wrap">Archivo y organización de documentación física de la facultad</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="checkmark-circle-outline" slot="start" color="success"></ion-icon>
+            <ion-label class="ion-text-wrap">Revisión y validación de documentos administrativos y académicos</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="checkmark-circle-outline" slot="start" color="success"></ion-icon>
+            <ion-label class="ion-text-wrap">Elaboración y actualización de documentación institucional</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="checkmark-circle-outline" slot="start" color="success"></ion-icon>
+            <ion-label class="ion-text-wrap">Digitalización y carga de información en base de datos Excel (registro anual)</ion-label>
+          </ion-item>
+        </ion-list>
+      </div>
+    </ion-accordion>
+
+    <ion-accordion value="cursos">
+      <ion-item slot="header" color="light">
+        <ion-icon name="ribbon-outline" slot="start"></ion-icon>
+        <ion-label>Cursos realizados</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <ion-list lines="none">
+          <ion-item>
+            <ion-icon name="checkmark-circle-outline" slot="start" color="success"></ion-icon>
+            <ion-label>Curso Básico de HTML</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="checkmark-circle-outline" slot="start" color="success"></ion-icon>
+            <ion-label>Creación de sitios web</ion-label>
+          </ion-item>
+        </ion-list>
+      </div>
+    </ion-accordion>
+
+  </ion-accordion-group>
+</ion-content>
